@@ -1,0 +1,84 @@
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.history div {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  background-color: #3e4e6cc0;
+  width: 100vw;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.carousel ul {
+  padding: 0;
+  list-style: none;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.carousel li {
+  padding: 0;
+}
+
+.carousel li img {
+  width: 250px;
+}
+
+.buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.buttons button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 0;
+}
+
+.buttons button:hover {
+  opacity: 1;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.notActive {
+  opacity: 0.7;
+}
+
+@media (max-width: 500px) {
+  .carousel li {
+    transition: 0.2s;
+  }
+  .open {
+    height: 150px;
+  }
+  .closed {
+    height: 2rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .carousel li {
+   height: 150px;
+  }
+}

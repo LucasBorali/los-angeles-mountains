@@ -1,0 +1,101 @@
+.team div {
+  position: relative;
+  display: flex;
+}
+
+.team h2 {
+  color: #3e4e6c;
+}
+
+.team span {
+  color: #3e4e6c6f;
+}
+
+.team p {
+  width: 50vw;
+}
+
+.btn {
+  background-color: #3e4e6c;
+  gap: 5px;
+  padding-left: 20vw;
+  margin-top: 1rem;
+}
+
+.btn button {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn button:hover {
+  background-color: #ffffffa7;
+  color: #3e4e6c;
+  text-decoration: underline;
+}
+
+.tab {
+  height: 70vh;
+}
+
+.tab img {
+  position: absolute;
+  z-index: -1;
+}
+
+table {
+  background-color: #ffffffb0;
+  padding: 2rem;
+  position: relative;
+  left: 20vw;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 225px;
+}
+
+thead th {
+  color: #3e4e6c;
+  font-size: 2rem;
+}
+
+tbody {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+tr {
+  display: flex;
+  gap: 2rem;
+}
+
+.inactive {
+  background-color: transparent;
+  color: #ffffffa7;
+}
+
+.active {
+  background-color: #ffffffa7;
+  color: #3e4e6c;
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .btn {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  table {
+    position: static;
+    padding: 1rem;
+    margin: auto;
+  }
+}
